@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="img.png" href="./Screenshot 2024-10-29 014407.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+    <link rel="stylesheet" href="styleCss/movie.css" />
+    <title>Movie Lend</title>
+  </head>
+  <body>
+    <div class="dropdown">
+        <button class="dropbtn">Translate</button>
+        <div class="dropdown-content">
+        <a id="arabic" href="#">Arabic</a>
+        </div>
+      </div>
+    <h1>Now Playing Movies</h1>
+    <section class="serch">
+      <input id="inputSearch" type="serch" placeholder="Get Movies By Word" />
+      <input id="inputRate" type="serch" placeholder="Get Movies By Collection" />
+    </section>
+
+    <section class="allMovies" id="allMovies">
+    </section>
+    <div class="menu">
+      <ul>
+        <li onclick="getMovies('now_playing')">Now playing</li>
+        <li onclick="getMovies('top_rated')">Top Rated</li>
+        <li onclick="getMovies('upcoming')">Up coming</li>
+        <li onclick="getMovies('Popular')">Popular</li>
+      </ul>
+    </div>
+    
+    <div><i class='fas fa-arrow-up ' id="etn" ></i>
+
+        <div class="More">
+            <button onclick="getMoviesByPage()" id="pages">Show More</button>
+        </div>
+
+    <script src="javaScript/movie.js"></script>
+  </body>
+</html>
